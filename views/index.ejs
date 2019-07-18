@@ -19,13 +19,15 @@
                 <% } %>
             </div>
         </header>
-        <ul>
+        <ul id="twits">
+            <!--
             <% for (const twit of twits) { %>
                 <li><%= twit.message %></li>
             <% } %>
+            -->
         </ul>
         <% if (session.authorized) { %>
-            <form action="/" method="POST">
+            <form id="twitForm" action="/" method="POST">
                 <textarea name="message"></textarea><br>
                 <input type="submit" value="Twit">
             </form>
